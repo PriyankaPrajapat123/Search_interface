@@ -1,0 +1,25 @@
+.suggestions {
+    margin-top: 30px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+   .suggestions button {
+      padding: 18px 12px;
+      cursor: pointer;
+      font-size: 16px;
+      border-radius: 4px;
+      border: 1px solid #b9b6b6;
+      background-color: white;
+
+  } 
+  .suggestions button:hover{
+    background-color: #dadada;
+  }
+  
+  @media (max-width: 767px) {
+    .suggestions {
+      grid-template-columns: 1fr;
+  }
+  }

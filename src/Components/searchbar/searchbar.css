@@ -1,0 +1,117 @@
+p,
+h5,
+h3 {
+  margin: 0;
+}
+a,
+button {
+  cursor: pointer;
+}
+.searchBarContent {
+  width: 55%;
+  margin: 0px auto;
+}
+.searchBar {
+  border: 1px solid #8f8f91;
+  height: 60px;
+  border-radius: 4px;
+  padding: 20px 18px 8px 18px;
+  cursor: pointer;
+  margin: 20px 0px 40px 0px;
+}
+.searchBar:hover {
+  box-shadow: rgb(4 79 221 / 35%) -5px 2px 65px;
+  box-shadow: 0 0 15px 4px rgb(0 255 126 / 60%),
+    0 0 30px 8px rgb(0 107 239 / 40%);
+  border: 2px solid #00cbf9;
+}
+.heartImg img {
+  width: 100%;
+  height: 20px;
+}
+
+.searchBarContent input[type="text"] {
+  width: 100%;
+  border: none;
+  font-size: 20px;
+  height: 30px;
+  background: transparent;
+}
+input:focus {
+  outline: none;
+}
+.answer-section p {
+  margin: 20px 0px;
+}
+
+.suggestions-list {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: auto;
+  margin-top: 10px;
+  max-height: 110px;
+  overflow-y: auto;
+  background: white;
+  z-index: 1;
+  position: absolute;
+  width: 47%;
+  justify-content: center;
+}
+.suggestion-item {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.suggestion-item:hover {
+  background-color: #f0f0f0;
+}
+.searchButton {
+  display: flex;
+  height: 40px;
+  align-items: center;
+}
+.searchButton button {
+  border: none;
+  background-color: transparent;
+}
+.searchButton button i.fas.fa-search {
+  font-size: 20px;
+}
+
+.typewriter-animation {
+  animation: typewriter 5s steps(50) 1s 1 normal both,
+    blinkingCursor 500ms steps(50) infinite normal;
+}
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes blinkingCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+.searchBarContent h1 {
+  text-align: center;
+  position: relative;
+  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  font-size: 30px;
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 3rem auto;
+  width: 50%;
+}
+
+@media (max-width: 767px) {
+  .searchBarContent {
+    width: 93%;
+    margin: 70px auto 70px;
+  }
+}
