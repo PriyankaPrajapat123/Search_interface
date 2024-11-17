@@ -1,4 +1,8 @@
 .app {
+  background-image: url('../src/images/home_bg.jpeg');
+  background-size: cover; /* Ensures the image covers the entire element */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat;
   height: 100vh;
   overflow-y: auto;
 }
