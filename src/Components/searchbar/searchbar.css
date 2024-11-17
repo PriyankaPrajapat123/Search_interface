@@ -93,8 +93,7 @@ input:focus {
 }
 @keyframes blinkingCursor {
   from {
-    border-right-color: rgba(255, 255, 255, 0.75);
-  }
+    border-right-color: transparent;  }
   to {
     border-right-color: transparent;
   }
