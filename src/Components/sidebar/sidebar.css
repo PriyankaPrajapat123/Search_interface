@@ -96,6 +96,7 @@ img.logo {
 /* When sidebar is hidden, it takes no space */
 .sidebar {
   transform: translateX(0px);
+  width: 266px;
 }
 
 /* Mobile styles */

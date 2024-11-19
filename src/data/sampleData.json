@@ -1,14 +1,38 @@
 [ {
-  "input": "What is diabetes?",
+  "input":  "What should be the recommendation if a screening endoscopy for Barrett’s esophagus shows severe erosive esophagitis (Los Angeles grade C)?",
   "answers": [
     {
-      "answer": "Diabetes is a chronic condition where the body either doesn't produce enough insulin or can't use it effectively, leading to high blood sugar levels.",
-      "context": [
-        {
-          "metadata": {"page": 2, "source": "Diabetes Source 1"},
-          "page_content": "Diabetes is classified into Type 1, Type 2, and gestational diabetes, each with distinct causes and risk factors."
-        }
-      ]
+      "answer": ". Year of publishing the guidelines: Region of the guidelines: \n\n*Factors Favoring Immediate Treatment for Severe Erosive Esophagitis (Los Angeles Grade C):\n   * High risk of progression to more severe esophageal damage if left untreated.\n   * Potential relief of symptoms such as pain, heartburn, or dysphagia.\n   * Prevention of complications like bleeding, stricture formation, or Barrett's esophagus progression.\n\n*Factors Favoring Conservative Management:\n   * Consideration of patient-specific factors such as the presence of comorbidities.\n   * Observation of lifestyle changes or dietary modifications before initiating aggressive treatment.\n\n*Important Considerations:\n   * Assessment of symptom severity and impact on quality of life.\n   * Evaluation of any underlying causes or contributing factors such as medications, dietary habits, or other medical conditions.\n   * Follow-up monitoring to assess the healing process and response to treatment.\n\n*Current Guidelines/Recommendations (if applicable):\n   * Initiation of proton pump inhibitor (PPI) therapy is commonly recommended for severe erosive esophagitis to promote healing and symptom relief.\n   * Lifestyle modifications such as dietary changes, weight loss, and avoiding triggers like alcohol and tobacco may be advised.\n   * Repeat endoscopy may be considered after a course of treatment to assess healing and rule out complications.\n\n*Recommendation:*\n   * Initiate treatment with a proton pump inhibitor (PPI) to address the severe erosive esophagitis and monitor the patient’s response. Follow up with lifestyle modifications and repeat endoscopy to ensure healing and check for complications.",
+     "context": [
+            {
+                "metadata": {
+                    "page": 96,
+                    "source": "C:\\src\\MedCopilot\\data\\Cardiology\\PIIS1547527117305908.pdf"
+                },
+                "page_content": "in up to 50% of patients.637,882,1175Observed asymptomatic\nesophageal ulcers were usually healed on repeat endoscopyat 2–3 weeks.\n1176One study reported endoscopy performed\non 267 patients who underwent RF ablation. The power onthe posterior wall was limited to 25 W. Among these pa-tients, 6 (2.2%) had either erythema ( n52) or a necrotic\nulcer ( n54) on endoscopy. Multivariate analysis revealed\nthat the distance between the LA and the esophagus was theonly independent predictor, although an LA isthmus lineand CS ablation showed a trend.\n900After treatment with a\nPPI (pantoprazole or esomeprazole) and sucralfate, allrecovered without development of an AEF. One study re-ported a higher incidence of esophageal injury among pa-tients undergoing AF ablation with general anesthesia\ncompared with conscious sedation.\n637It has been proposed\nthat this relationship re ﬂects the absence of pain feedback\nand reduced esophageal motility resulting from generalanesthesia."
+            },
+            {
+                "metadata": {
+                    "page": 66,
+                    "source": "C:\\src\\MedCopilot\\data\\Cardiology\\PIIS1547527117305908.pdf"
+                },
+                "page_content": "mal lesions (diameter: 2 –16 mm) were observed in 14.6%\nof the patients.\n902These lesions only occurred when the intra-\nluminal esophageal temperature had reached more than\n41/C14C. The odds of an esophageal lesion increased by a factor\nof 1.36 (95% CI 1.07 –1.74; P5.012) for every 1/C14C rise in\ntemperature.\nGastrointestinal endoscopy in a cohort of 425 patients 1 to\n3 days after AF catheter ablation, in whom intraluminalesophageal temperatures higher than 41\n/C14C were recorded, re-\nvealed esophageal tissue lesions in 11.6% of asymptomaticpatients.\n903Hence, these observations suggest that asymp-\ntomatic patients could bene ﬁt from routine gastrointestinal\nendoscopy after RF catheter ablative therapy when the intra-luminal esophageal temperature during the procedure hasreached a certain target temperature, such as 41\n/C14C. However,"
+            },
+            {
+                "metadata": {
+                    "page": 66,
+                    "source": "C:\\src\\MedCopilot\\data\\Cardiology\\PIIS1547527117305908.pdf"
+                },
+                "page_content": "endoscopy after RF catheter ablative therapy when the intra-luminal esophageal temperature during the procedure hasreached a certain target temperature, such as 41\n/C14C. However,\nthere are no reports on the value of this type of follow-upendoscopic examination after ablative therapy. Only onestudy did a follow-up endoscopy at least 7 days after the ﬁrst\nexamination in patients with an esophageal lesion diameter\n.5 mm and found regression of all 3168 lesions.\n903A PPI\nwas used in all the patients for 4 weeks after ablation.\nRole and Indications for CT Imaging for Diagnosis of\nAtrioesophageal FistulaAfter ablation, symptoms and ﬁndings suggesting the possi-\nbility of evolving AEF include chest pain, painful swallow-ing, fever, leukocytosis, TIA, and/or stroke typically\noccurring between 1 and 3 weeks postablation. If esophageal\ninjury is suspected, CT imaging with intravenous and water-soluble oral contrast is recommended.\n904,905,906Findings on"
+            },
+            {
+                "metadata": {
+                    "page": 66,
+                    "source": "C:\\src\\MedCopilot\\data\\Cardiology\\PIIS1547527117305908.pdf"
+                },
+                "page_content": "901Other mechanisms, such as\ntraumatic injury of the esophageal wall, could also play a po-tential role in ﬁstula formation, although there is no proof of\nthis concept. Prophylactic short-term use of PPIs after AFablation is assumed to be effective; however, further large\nrandomized studies are required to determine whether PPIs\nreduce AEFs. Because of the low event rate of AEFs, sucha study will not likely be performed. At the moment, PPI ther-apy is justi ﬁed as a singular preventive treatment.\nRole and Indications for Endoscopic Screening for Ulceration\nFollowing AF Ablation\nBecause AEF can cause septicemia and air embolism leading\nto death, early detection of esophageal tissue injuries is essen-tial. Data evaluating the role of gastrointestinal endoscopy fordetection of esophageal tissue lesions are limited. In 185 pa-tients who underwent gastrointestinal endoscopy after LA RFablative therapy, ulcer-like or hemorrhagic esophageal ther-"
+            }
+        ]
     },
     {
       "answer": "It is a metabolic disorder that affects the way the body processes glucose, the main source of energy for cells.",

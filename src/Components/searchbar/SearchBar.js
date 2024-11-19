@@ -8,6 +8,7 @@ import Footer from "../footer/Footer"
 import { ShimmerThumbnail, ShimmerText } from "react-shimmer-effects";
 import searctButton from "../../images/search_icon.gif";
 import Sidebar from "../sidebar/Sidebar"; // Import Sidebar component
+import FeedbackPopup from "../feedback/FeedbackPopup";
 
 function SearchBar() {
   const [query, setQuery] = useState("");
@@ -18,6 +19,18 @@ function SearchBar() {
   const [loading, setLoading] = useState(false);
   const [relatedQuestion, setRelatedQuestion] = useState(null);
   const [searchHistory, setSearchHistory] = useState([]); // State to store search history
+
+  const [showFeedbackPopup, setShowFeedbackPopup] = useState(false);
+  const [submittedFeedback, setSubmittedFeedback] = useState(null); // Store submitted feedback
+  // Other states...
+
+  const handleFeedbackSubmit = (feedback) => {
+    if (feedback.trim()) {
+      setSubmittedFeedback(feedback);
+      console.log("Feedback submitted:", feedback);
+      setShowFeedbackPopup(false); // Close the popup after submission
+    }
+  };
 
   useEffect(() => {
     if (relatedQuestion) {
@@ -77,7 +90,12 @@ function SearchBar() {
     return searchTerm && input.includes(searchTerm); 
   });
 
-  
+const formatAnswer = (text) => {
+  return text
+    .replace(/\n/g, "<br>") // Replace \n with <br>
+    .replace(/\(([^)]+)\)/g, "<strong>$1</strong>"); // Wrap text inside parentheses with <strong>
+};
+
   return (
     <>      {/* Sidebar Component */}
     <Sidebar searchHistory={searchHistory} />
@@ -124,8 +142,37 @@ function SearchBar() {
         selectedObject && randomAnswer && (
           <div className="answer-section">
             <h3>Your Search Result:</h3>
+            
             <div className=" ">
-              <p >{randomAnswer.answer}</p>
+            {/* <p
+      dangerouslySetInnerHTML={{
+        __html: `${formatAnswer(randomAnswer.answer)} <a href="${randomAnswer.context[0].metadata.source}" class="sourceLink">Source</a>`
+      }}
+    /> */}
+     <div className="resultPara">
+    <p
+      dangerouslySetInnerHTML={{
+        __html: formatAnswer(randomAnswer.answer)
+      }}
+    />
+   <div className="morelinks">
+   <a href={randomAnswer.context[0].metadata.source} className="sourceLink">Source</a>
+    <div className="feedback">
+      <i className="fa-solid fa-thumbs-up"></i>
+      <i 
+        className="fa-solid fa-thumbs-down" 
+        onClick={() => setShowFeedbackPopup(true)}
+      ></i>
+    </div>
+   </div>
+  </div>
+              {/* <p  >{randomAnswer.answer}
+                 <a src={randomAnswer.context[0].metadata.source} className="sourceLink">Source</a>
+              </p> */}
+              {/* <div className="feedback"><i class="fa-solid fa-thumbs-up"></i> <i
+                  className="fa-solid fa-thumbs-down"
+                  onClick={() => setShowFeedbackPopup(true)}
+                ></i></div> */}
             </div>
           </div>
         )
@@ -167,7 +214,11 @@ function SearchBar() {
       )}
 
 <Footer/>
-
+<FeedbackPopup
+          isOpen={showFeedbackPopup}
+          onClose={() => setShowFeedbackPopup(false)}
+          onSubmitFeedback={handleFeedbackSubmit}
+        />
     </div>
     </>
   );
